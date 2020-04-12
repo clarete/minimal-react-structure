@@ -1,0 +1,58 @@
+* Very first steps create a react website
+
+  There are a billion ways that can be chosen. This is mine. If you
+  think it's wrong, well, come up with your own and stop reading right
+  here.
+
+  We won't be using react-create-app, simply because I don't want to.
+
+  All the next sections mention "creating" files. Well, you can steal
+  them from somewhere else if you don't want to create them. It's fine
+  to steal.
+
+  Jokes apart, I have had a hard time understanding all the work done
+  by ~create-react-app~ and I really like to understand most things
+  I'm doing.  To keep things simple, this repository contains the
+  *bare minimum* structure to play with React and still be sorta
+  plausible to understand.
+
+** Create an HTML document called index.html
+
+** Create the package.json file
+
+** Create webpack.config.js file
+
+** Install the packages
+
+   #+begin_src shell
+   $ npm install
+   #+end_src
+
+   The above command installed all the stuff described within the
+   package.json file from both ~dependencies~ and ~devDependencies~
+   sections.
+
+   One of the packages installed was ~webpack~ which is used to, in
+   the lack of a better word, compile all the code you're going to
+   write into assets that are ready to be served.
+
+   ~webpack~ provides a very nice utility, called
+   ~webpack-dev-server~.  The name might have given you a hint that
+   it's webpack's development server. You can use it locally and avoid
+   thinking about hosting your website somewhere else on the internet
+   while you're just trying build it.  To use it, simply call the
+   ~webpack-dev-server~ command from the root of your project.  If you
+   try it right about now, you'll se an error, because, well, you
+   don't have any code just yet. Hang tight and continue to read.
+
+** NOW WE CODE!!
+
+   OK, all the stuff you'll actually do instead of just stealing files
+   will be put into the directory ~src~ directory, that you might have
+   to create yourself. You can't steal empty directories,
+   unfortunately.
+
+   There might be one more file to be stolen before you use all the
+   creativity you've been saving by stealing so much good content from
+   the internet. The file ~src/index.jsx~ will "mount" the react
+   application into your normal looking ~index.html~ file.
