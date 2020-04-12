@@ -16,25 +16,26 @@
   *bare minimum* structure to play with React and still be sorta
   plausible to understand.
 
-** Create an HTML document called index.html
-
-** Create the package.json file
-
-** Create webpack.config.js file
-
 ** Install the packages
+
+   This project contains the minimum list of packages that you need to
+   run react with JSX. When you run the following command
 
    #+begin_src shell
    $ npm install
    #+end_src
 
-   The above command installed all the stuff described within the
-   package.json file from both ~dependencies~ and ~devDependencies~
+   NPM will install all the packages listed in the
+   ~package.json~ file in both ~dependencies~ and ~devDependencies~
    sections.
 
-   One of the packages installed was ~webpack~ which is used to, in
-   the lack of a better word, compile all the code you're going to
-   write into assets that are ready to be served.
+** The webpack.config.js file
+
+   One of the packages we just installed was ~webpack~ which is used
+   to, in the lack of a better word, compile all the code you're going
+   to write into assets that are ready to be served.  It will take the
+   whole content within the ~src~ directory and bundle it up into a
+   single javascript file (in our case ~dist/main.js~).
 
    ~webpack~ provides a very nice utility, called
    ~webpack-dev-server~.  The name might have given you a hint that
@@ -44,6 +45,13 @@
    ~webpack-dev-server~ command from the root of your project.  If you
    try it right about now, you'll se an error, because, well, you
    don't have any code just yet. Hang tight and continue to read.
+
+** The index.html file
+
+   This file is what is the browser loads when the webserver is
+   reached.  This is also the file that loads the bundle prepared by
+   webpack and allows react to inject itself (using ReactDOM) into the
+   HTML page.
 
 ** NOW WE CODE!!
 
