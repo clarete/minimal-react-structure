@@ -42,9 +42,10 @@
    it's webpack's development server. You can use it locally and avoid
    thinking about hosting your website somewhere else on the internet
    while you're just trying build it.  To use it, simply call the
-   ~webpack-dev-server~ command from the root of your project.  If you
-   try it right about now, you'll se an error, because, well, you
-   don't have any code just yet. Hang tight and continue to read.
+   ~node_modules/.bin/webpack-dev-server~ command from the root of
+   your project.  If you try it right about now, you'll se an error,
+   because, well, you don't have any code just yet. Hang tight and
+   continue to read.
 
 ** The index.html file
 
